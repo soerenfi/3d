@@ -13,6 +13,10 @@ find_library(COREVID_LIBRARY CoreVideo REQUIRED)
 message(${COCOA_LIBRARY})
 message(${IOKIT_LIBRARY})
 message(${COREVID_LIBRARY})
+find_package(GLEW 2.0 REQUIRED)
+if (GLEW_FOUND)
+    include_directories(${GLEW_INCLUDE_DIRS})
+endif()
 
 set(CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR})
 
@@ -29,4 +33,5 @@ target_link_libraries(${PROJECT_NAME}
   ${IOKIT_LIBRARY}
   ${COREVID_LIBRARY}
   ${CMAKE_CURRENT_SOURCE_DIR}/thirdparty/GLFW/lib-x86_64/libglfw3.a
+  GLEW::GLEW
   )

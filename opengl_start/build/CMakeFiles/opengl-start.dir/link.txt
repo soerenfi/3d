@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -std=c++17 -O3 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/opengl-start.dir/src/main.cc.o -o opengl-start  -framework OpenGL -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo ../thirdparty/GLFW/lib-x86_64/libglfw3.a 

@@ -1,8 +1,8 @@
-# Install script for directory: /Users/Jana/workspace/opengl_start
+# Install script for directory: /Users/Jana/workspace/3d/opengl_start
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/Jana/workspace/opengl_start")
+  set(CMAKE_INSTALL_PREFIX "/Users/Jana/workspace/3d/opengl_start")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/Jana/workspace/opengl_start/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/Jana/workspace/3d/opengl_start/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

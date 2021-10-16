@@ -1,6 +1,6 @@
 CMakeFiles/opengl-start.dir/src/main.cc.o: \
-  /Users/Jana/workspace/opengl_start/src/main.cc \
-  /Users/Jana/workspace/opengl_start/thirdparty/GLFW/include/GLFW/glfw3.h \
+  /Users/Jana/workspace/3d/opengl_start/src/main.cc \
+  /Users/Jana/workspace/3d/opengl_start/thirdparty/GLFW/include/GLFW/glfw3.h \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/stddef.h \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/pthread.h \

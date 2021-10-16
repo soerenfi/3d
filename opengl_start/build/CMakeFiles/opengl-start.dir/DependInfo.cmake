@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/Jana/workspace/opengl_start/src/main.cc" "CMakeFiles/opengl-start.dir/src/main.cc.o" "gcc" "CMakeFiles/opengl-start.dir/src/main.cc.o.d"
+  "/Users/Jana/workspace/3d/opengl_start/src/main.cc" "CMakeFiles/opengl-start.dir/src/main.cc.o" "gcc" "CMakeFiles/opengl-start.dir/src/main.cc.o.d"
   )
 
 # Targets to which this target links.

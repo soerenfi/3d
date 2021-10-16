@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/Jana/workspace/opengl_start/include -I/Users/Jana/workspace/opengl_start/thirdparty/GLFW/include
+CXX_INCLUDES = -I/Users/Jana/workspace/3d/opengl_start/include -I/Users/Jana/workspace/3d/opengl_start/thirdparty/GLFW/include
 
 CXX_FLAGS =  -std=c++17 -O3 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -std=gnu++17
 

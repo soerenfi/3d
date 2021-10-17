@@ -132,11 +132,15 @@ int main(void)
   double lastTime = glfwGetTime();
   int nbFrames = 0;
 
-  float positions[6]{
-      -0.5f, -0.5f, //
-      0.0f, 0.5f,   //
-      0.5f, -0.5f   //
+  float positions[12]{
+      -0.5f, -0.5f, // 0
+      0.5f, -0.5f,  // 1
+      0.5f, 0.5f,   // 2
+      -0.5f, 0.5f,  // 3
   };
+  unsigned int indices[] = {
+      0, 1, 2,
+      2, 3, 0};
 
   unsigned int buffer;
   glGenBuffers(1, &buffer);
@@ -145,6 +149,11 @@ int main(void)
 
   glEnableVertexAttribArray(0);
   glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(float), 0);
+
+  unsigned int ibo;
+  glGenBuffers(1, &ibo);
+  glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ibo);
+  glBufferData(GL_ELEMENT_ARRAY_BUFFER, 6 * sizeof(unsigned int), indices, GL_STATIC_DRAW);
 
   ShaderProgramSource source = ParseShader("res/basic.shader");
   std::cout << "VERTEX" << std::endl;
@@ -161,7 +170,7 @@ int main(void)
     glClear(GL_COLOR_BUFFER_BIT);
 
     // Draw
-    glDrawArrays(GL_TRIANGLES, 0, 3);
+    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
 
     /* Swap front and back buffers */
     glfwSwapBuffers(window);

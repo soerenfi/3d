@@ -4,3 +4,15 @@
 [submodule "opengl_start/thirdparty/glfw"]
 	path = opengl_start/thirdparty/glfw
 	url = https://github.com/glfw/glfw.git
+[submodule "magnum/thirdparty/magnum"]
+	path = magnum/thirdparty/magnum
+	url = https://github.com/mosra/magnum.git
+[submodule "magnum/thirdparty/corrade"]
+	path = magnum/thirdparty/corrade
+	url = https://github.com/mosra/corrade.git
+[submodule "magnum-bootstrap-base-glfw/thirdparty/corrade"]
+	path = magnum-bootstrap-base-glfw/thirdparty/corrade
+	url = https://github.com/mosra/corrade.git
+[submodule "magnum/thirdparty/glfw"]
+	path = magnum/thirdparty/glfw
+	url = https://github.com/glfw/glfw.git

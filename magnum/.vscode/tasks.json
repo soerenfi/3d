@@ -1,0 +1,13 @@
+{
+    "tasks": [
+        {
+            "label": "cmake opengl",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },
+            "command": "cmake -DCMAKE_BUILD_TYPE=Debug  ${workspaceFolder} && make -j $(nproc)",
+        }
+    ],
+    "version": "2.0.0"
+}

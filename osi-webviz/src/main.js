@@ -9,7 +9,7 @@ init();
 animate();
 
 function init() {
-	renderer = new THREE.WebGLRenderer({ antialias: true });
+	renderer = new THREE.WebGLRenderer({ antialias: false });
 	var width = window.innerWidth;
 	var height = window.innerHeight;
 	renderer.setSize(width, height);
@@ -21,18 +21,20 @@ function init() {
 	var cubeMaterial = new THREE.MeshBasicMaterial({ color: 0x1ec876 });
 	cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
 
-	cube.position.set(0, 0, 0);
+	cube.position.set(0, 0, 10);
 	scene.add(cube);
 
-	camera = new THREE.PerspectiveCamera(45, width / height, 1, 10000);
-	camera.position.y = 160;
-	camera.position.z = 400;
+	camera = new THREE.PerspectiveCamera(50, width / height, 1, 1000);
+	camera.position.x = -100;
+	camera.position.z = 100;
+	camera.up.set(0, 0, 1);
 	camera.lookAt(new THREE.Vector3(0, 0, 0));
 
 	controls = new OrbitControls(camera, renderer.domElement);
 
-	var gridXZ = new THREE.GridHelper(100, 10);
-	scene.add(gridXZ);
+	var grid = new THREE.GridHelper(100, 10);
+	grid.geometry.rotateX(Math.PI / 2);
+	scene.add(grid);
 
 }
 

@@ -4,6 +4,12 @@
   "main": "index.html",
   "license": "MIT",
   "dependencies": {
+    "@types/node": "^16.11.6",
+    "protobufjs": "^6.11.2",
+    "requirejs": "^2.3.6",
     "three": "^0.134.0"
+  },
+  "scripts": {
+    "dev": "webpack serve --config ./src/client/webpack.dev.js"
   }
 }

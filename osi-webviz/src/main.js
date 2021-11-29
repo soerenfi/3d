@@ -1,6 +1,9 @@
 import * as THREE from "https://cdn.skypack.dev/three@0.132.2";
 import { OrbitControls } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js";
 
+const path = require('path')
+const protobuf = require('protobufjs')
+
 var scene, renderer, camera;
 var cube;
 var controls;
@@ -35,6 +38,16 @@ function init() {
 	var grid = new THREE.GridHelper(100, 10);
 	grid.geometry.rotateX(Math.PI / 2);
 	scene.add(grid);
+
+
+	// protobuf.load({ file: path.resolve('osi_sensorview.proto'), root: path.resolve('open-simulation-interface') }, function (err, root) {
+	// 	if (err)
+	// 		throw err;
+
+	// 	console.log("proto loaded");
+	// 	var SensorView = root.lookupType("osi3.SensorView");
+
+	// });
 
 }
 

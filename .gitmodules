@@ -16,3 +16,6 @@
 [submodule "magnum/thirdparty/glfw"]
 	path = magnum/thirdparty/glfw
 	url = https://github.com/glfw/glfw.git
+[submodule "osi-webviz/open-simulation-interface"]
+	path = osi-webviz/open-simulation-interface
+	url = https://github.com/OpenSimulationInterface/open-simulation-interface.git

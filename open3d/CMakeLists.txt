@@ -48,9 +48,13 @@ target_link_libraries(Open3DHelper INTERFACE Open3D)
 add_library(Open3D::Open3D ALIAS Open3DHelper)
 
 add_executable(Draw)
-target_sources(Draw PRIVATE Draw.cpp)
+target_sources(Draw PRIVATE src/Draw.cpp)
 target_link_libraries(Draw PRIVATE Open3D::Open3D)
 
 add_executable(TestVisualizer)
-target_sources(TestVisualizer PRIVATE TestVisualizer.cpp)
+target_sources(TestVisualizer PRIVATE src/TestVisualizer.cpp)
 target_link_libraries(TestVisualizer PRIVATE Open3D::Open3D)
+
+add_executable(Visualizer)
+target_sources(Visualizer PRIVATE src/Visualizer.cpp)
+target_link_libraries(Visualizer PRIVATE Open3D::Open3D)

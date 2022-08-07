@@ -29,6 +29,9 @@
 #include <thread>
 
 #include "open3d/Open3D.h"
+#include "open3d/visualization/visualizer/GuiSettingsModel.h"
+
+
 
 // A simplified version of examples/cpp/Visualizer.cpp to demonstrate linking
 // an external project to Open3D.
@@ -44,7 +47,6 @@ int main(int argc, char *argv[]) {
         // CI will execute this file without input files, return 0 to pass
         return 0;
     }
-
     std::string option(argv[1]);
     if (option == "mesh") {
         auto mesh_ptr = std::make_shared<geometry::TriangleMesh>();

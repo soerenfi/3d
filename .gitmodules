@@ -19,3 +19,6 @@
 [submodule "osi-webviz/open-simulation-interface"]
 	path = osi-webviz/open-simulation-interface
 	url = https://github.com/OpenSimulationInterface/open-simulation-interface.git
+[submodule "vulkan/nvpro_core"]
+	path = vulkan/nvpro_core
+	url = https://github.com/nvpro-samples/nvpro_core.git
